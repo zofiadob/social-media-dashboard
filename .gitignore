@@ -13,3 +13,7 @@
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
+sass/main.min.css.map
+sass/main.css
+sass/main.css.map
+sass/main.min.css

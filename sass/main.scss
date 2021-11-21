@@ -1,0 +1,13 @@
+@use './desktop' as desktop;
+
+html{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+@include desktop.desktop-view();
+
+
+@media all and (max-width: 1000px) {
+    
+}
