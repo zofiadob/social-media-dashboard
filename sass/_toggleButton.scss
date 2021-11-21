@@ -1,0 +1,54 @@
+@use './variables' as *;
+
+
+.theme-button-box{
+    width: 50%;
+    text-align: right;
+
+
+    .toggle{
+        position: relative;
+        display: inline-block;
+        width: 4.5em;
+        height: 2em;
+        margin: 1.5rem 0;
+
+        input{
+            display: none;
+         }
+
+         .slider{
+             position: absolute;
+             cursor: pointer;
+             top: 0;
+             bottom: 0;
+             right: 0;
+             left: 0;
+             background: $light-toggle;
+             border-radius: 34px;
+
+             &::before{
+                 content: '';
+                 position: absolute;
+                 width: 1.5em;
+                 height: 1.5em;
+                 left: 2.7rem;
+                 bottom: 0.21rem;
+                 background: $white;
+                 border-radius: 50%;
+                 transition: .4s;
+             }
+         }
+
+        input:checked + .slider{
+            background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+
+        }
+
+        input:checked + .slider::before{
+            transform: translate(-34px);
+        }
+    }
+
+
+}

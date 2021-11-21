@@ -1,5 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.theme-button-box {
+  width: 50%;
+  text-align: right;
+}
+.theme-button-box .toggle {
+  position: relative;
+  display: inline-block;
+  width: 4.5em;
+  height: 2em;
+  margin: 1.5rem 0;
+}
+.theme-button-box .toggle input {
+  display: none;
+}
+.theme-button-box .toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #aeb3cb;
+  border-radius: 34px;
+}
+.theme-button-box .toggle .slider::before {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  left: 2.7rem;
+  bottom: 0.21rem;
+  background: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.theme-button-box .toggle input:checked + .slider {
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+.theme-button-box .toggle input:checked + .slider::before {
+  transform: translate(-34px);
+}
+
+html {
+  font-family: "Inter";
+}
+
 html {
   box-sizing: border-box;
   font-size: 14px;
+}
+
+body {
+  margin: 4rem 11rem;
+}
+
+.up-box {
+  display: flex;
+}
+.up-box .text-box {
+  width: 50%;
+  font-weight: 700;
+}
+.up-box .text-box .main-text {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.up-box .text-box .sub-text {
+  color: #63687e;
+  margin: 0;
+}
+
+.attribution {
+  display: none;
 }
