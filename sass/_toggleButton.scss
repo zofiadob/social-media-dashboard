@@ -4,9 +4,17 @@
 .theme-button-box{
     width: 50%;
     text-align: right;
+    display: flex;
 
+    .text{
+        width: 80%;
+        margin: auto;
+        color: $light-toggle;
+        font-weight: $bold;
+    }
 
     .toggle{
+        width: 20%;
         position: relative;
         display: inline-block;
         width: 4.5em;
@@ -41,7 +49,7 @@
          }
 
         input:checked + .slider{
-            background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+            background: $dark-toggle;
 
         }
 

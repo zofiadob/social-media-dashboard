@@ -2,8 +2,16 @@
 .theme-button-box {
   width: 50%;
   text-align: right;
+  display: flex;
+}
+.theme-button-box .text {
+  width: 80%;
+  margin: auto;
+  color: #aeb3cb;
+  font-weight: 700;
 }
 .theme-button-box .toggle {
+  width: 20%;
   position: relative;
   display: inline-block;
   width: 4.5em;
