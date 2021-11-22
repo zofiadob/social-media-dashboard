@@ -49,6 +49,86 @@
   transform: translate(-34px);
 }
 
+.large-box-contaianer {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+.large-box-contaianer .box {
+  align-self: stretch;
+  background: #f0f2fa;
+  border-radius: 10px;
+}
+.large-box-contaianer .box:hover {
+  background: #e1e3f0;
+  transition: background 0.7s;
+}
+.large-box-contaianer .large {
+  height: 15em;
+}
+.large-box-contaianer .color-bar {
+  min-height: 4px;
+  border-radius: 10px 10px 0 0;
+}
+.large-box-contaianer .color-bar#facebook {
+  background: #198ff5;
+}
+.large-box-contaianer .color-bar#twitter {
+  background: #1ca0f2;
+}
+.large-box-contaianer .color-bar#instagram {
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+.large-box-contaianer .color-bar#youtube {
+  background: #c4032a;
+}
+.large-box-contaianer .content-box {
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+.large-box-contaianer .content-box .social-logo {
+  color: #63687e;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+.large-box-contaianer .content-box .social-logo .social-name {
+  font-size: 0.89rem;
+  margin-left: 0.3rem;
+}
+.large-box-contaianer .content-box .social-logo img, .large-box-contaianer .content-box .social-logo .social-name {
+  vertical-align: middle;
+}
+.large-box-contaianer .content-box .followers .number {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.large-box-contaianer .content-box .followers .text-followers {
+  font-weight: 400;
+  color: #63687e;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.large-box-contaianer .content-box .today-follow {
+  margin-top: 1.3rem;
+}
+.large-box-contaianer .content-box .today-follow img, .large-box-contaianer .content-box .today-follow .amount-today {
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+.large-box-contaianer .content-box .today-follow .green {
+  color: #1db489;
+}
+.large-box-contaianer .content-box .today-follow .red {
+  color: #dc414c;
+}
+
 html {
   font-family: "Inter";
 }

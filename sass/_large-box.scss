@@ -1,5 +1,97 @@
-@use './variables' as *;
+@use "./variables" as *;
 
-@mixin large-box() {
-    
+.large-box-contaianer {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem;
+    column-gap: 2.5rem;
+
+    .box {
+        align-self: stretch;
+        background: $light-grayish-blue;
+        border-radius: 10px;
+
+        &:hover{
+            background: $on-hover-box;
+            transition: background .7s;
+        }
+    }
+
+    .large {
+        height: 15em;
+    }
+
+    .color-bar {
+        min-height: 4px;
+        border-radius: 10px 10px 0 0;
+
+        &#facebook {
+            background: $facebook;
+        }
+        &#twitter {
+            background: $twitter;
+        }
+        &#instagram {
+            background: $instagram;
+        }
+        &#youtube {
+            background: $youTube;
+        }
+    }
+
+    .content-box {
+        text-align: center;
+        font-weight: $bold;
+        display: flex;
+        flex-direction: column;
+
+        .social-logo{
+            color: $dark-grayish-blue;
+            margin-top: 1.8rem;
+            margin-bottom: 1rem;
+
+            .social-name{
+                font-size: .89rem;
+                margin-left: .3rem;
+            }
+
+            img, .social-name{
+                vertical-align: middle;
+            }
+        }
+
+        .followers{
+            .number{
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+            }
+
+            .text-followers{
+                font-weight: $regular;
+                color: $dark-grayish-blue;
+                letter-spacing: 0.3rem;
+                font-size: 1.2rem;
+                margin: 0;
+            }
+        }
+
+
+        .today-follow{
+            margin-top: 1.3rem;
+            img, .amount-today{
+                vertical-align: middle;
+                font-size: 0.9rem;
+            }
+            
+            .green{
+                color: $lime-green;
+            }
+
+            .red{
+                color: $bright-red;
+            }
+        }
+    }
 }
