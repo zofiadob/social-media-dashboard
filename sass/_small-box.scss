@@ -2,7 +2,16 @@
 @use "./box" as boxComponent;
 @use "./follow-numbers" as follow;
 
-
+.second-header{
+    .text{
+        font-size: 1.7rem;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        color: $dark-grayish-blue;
+        font-weight: $bold;
+        margin-top: 2.8rem;
+    }
+}
 
 .small-box-container{
     column-gap: 2.5rem;

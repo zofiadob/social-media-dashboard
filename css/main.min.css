@@ -130,6 +130,15 @@
   color: #dc414c;
 }
 
+.second-header .text {
+  font-size: 1.7rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: #63687e;
+  font-weight: 700;
+  margin-top: 2.8rem;
+}
+
 .small-box-container {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
