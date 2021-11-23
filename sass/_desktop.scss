@@ -1,6 +1,7 @@
 @use './variables' as *;
 @use './toggleButton';
 @use './large-box';
+@use './small-box';
 
 html{
     font-family: $font;

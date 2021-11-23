@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+@mixin box() {
+    .box{
+        align-self: stretch;
+        background: $light-grayish-blue;
+        border-radius: 10px;
+
+        &:hover{
+            background: $on-hover-box;
+            transition: background .7s;
+        }
+    }
+}

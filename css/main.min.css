@@ -129,6 +129,24 @@
   color: #dc414c;
 }
 
+.small-box-container {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 9rem 9rem;
+}
+.small-box-container .box {
+  align-self: stretch;
+  background: #f0f2fa;
+  border-radius: 10px;
+}
+.small-box-container .box:hover {
+  background: #e1e3f0;
+  transition: background 0.7s;
+}
+
 html {
   font-family: "Inter";
 }

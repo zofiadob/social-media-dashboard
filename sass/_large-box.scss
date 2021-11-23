@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./box" as boxComponent;
 
 .large-box-contaianer {
     margin-top: 2.5rem;
@@ -7,16 +8,7 @@
     grid-template-rows: 15rem;
     column-gap: 2.5rem;
 
-    .box {
-        align-self: stretch;
-        background: $light-grayish-blue;
-        border-radius: 10px;
-
-        &:hover{
-            background: $on-hover-box;
-            transition: background .7s;
-        }
-    }
+    @include boxComponent.box();
 
     .large {
         height: 15em;

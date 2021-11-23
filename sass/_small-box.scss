@@ -1,0 +1,16 @@
+@use "./variables" as *;
+@use "./box" as boxComponent;
+
+
+
+.small-box-container{
+    column-gap: 2.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 9rem 9rem;
+
+
+    @include boxComponent.box();
+}
+
