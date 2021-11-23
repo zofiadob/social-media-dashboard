@@ -121,6 +121,7 @@
 .large-box-contaianer .content-box .today-follow img, .large-box-contaianer .content-box .today-follow .amount-today {
   vertical-align: middle;
   font-size: 0.9rem;
+  font-weight: 700;
 }
 .large-box-contaianer .content-box .today-follow .green {
   color: #1db489;
@@ -132,6 +133,7 @@
 .small-box-container {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+  row-gap: 1.8rem;
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -145,6 +147,49 @@
 .small-box-container .box:hover {
   background: #e1e3f0;
   transition: background 0.7s;
+}
+.small-box-container .small {
+  display: flex;
+}
+.small-box-container .small .left-half, .small-box-container .small .right-half {
+  width: 50%;
+  margin: auto;
+}
+.small-box-container .small .left-half {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-left: 2rem;
+}
+.small-box-container .small .left-half .page-views {
+  color: #63687e;
+  margin-bottom: 1.4rem;
+  margin-top: 0;
+}
+.small-box-container .small .left-half .number {
+  font-size: 2.3em;
+  margin: 0;
+}
+.small-box-container .small .right-half {
+  margin-right: 2rem;
+  text-align: right;
+}
+.small-box-container .small .right-half .icon {
+  margin-bottom: 2.2rem;
+}
+.small-box-container .small .right-half .today-follow {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.small-box-container .small .right-half .today-follow img, .small-box-container .small .right-half .today-follow .amount-today {
+  vertical-align: middle;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.small-box-container .small .right-half .today-follow .green {
+  color: #1db489;
+}
+.small-box-container .small .right-half .today-follow .red {
+  color: #dc414c;
 }
 
 html {

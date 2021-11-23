@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./box" as boxComponent;
+@use "./follow-numbers" as follow;
 
 .large-box-contaianer {
     margin-top: 2.5rem;
@@ -72,18 +73,8 @@
 
         .today-follow{
             margin-top: 1.3rem;
-            img, .amount-today{
-                vertical-align: middle;
-                font-size: 0.9rem;
-            }
             
-            .green{
-                color: $lime-green;
-            }
-
-            .red{
-                color: $bright-red;
-            }
+            @include follow.followers();
         }
     }
 }

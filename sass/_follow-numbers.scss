@@ -1,0 +1,17 @@
+@use "./variables" as *;
+
+@mixin followers {
+    img, .amount-today{
+        vertical-align: middle;
+        font-size: 0.9rem;
+        font-weight: $bold;
+    }
+    
+    .green{
+        color: $lime-green;
+    }
+
+    .red{
+        color: $bright-red;
+    }
+}
