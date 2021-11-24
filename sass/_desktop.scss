@@ -19,6 +19,10 @@ html{
         .text-box{
             width: 50%;
             font-weight: $bold;
+            
+            .separate-line{
+                display: none;
+            }
 
             .main-text{
                 font-size: 30px;
