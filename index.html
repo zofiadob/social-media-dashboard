@@ -6,10 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
+  <script type="text/javascript" src="./js/changeMode.js"></script>
 
   <title>Social Media Dashboard</title>
 </head>
-<body class="theme-light">
+<body id="mode-change" class="theme-light">
 
 <div class="contaner-all">
 
@@ -22,7 +23,7 @@
     <div class="theme-button-box">
       <div class="text">Dark Mode</div>
       <label class="toggle">
-        <input type="checkbox">
+        <input id="mode" type="checkbox" onchange="changeMode(this)">
         <span class="slider"></span>
       </label>
     </div>
