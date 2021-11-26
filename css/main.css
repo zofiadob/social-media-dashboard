@@ -202,7 +202,7 @@
 }
 
 .dark-theme {
-  background: linear-gradient(0deg, #1e202a 68%, #1f212e 32%);
+  background: linear-gradient(0deg, #1e202a 68%, #20222F 32%);
 }
 .dark-theme .main-text {
   color: white;
@@ -217,7 +217,7 @@
   border: 1px solid #333a56;
 }
 .dark-theme .theme-button-box .toggle .slider::before {
-  background: #1f212e;
+  background: #20222F;
 }
 .dark-theme .box {
   background-color: #252a41;
@@ -247,10 +247,7 @@ html {
 
 body {
   margin: 4rem 11rem;
-}
-
-.theme-light {
-  background: linear-gradient(0deg, white 68%, rgba(240, 242, 250, 0.4) 32%);
+  background: linear-gradient(0deg, white 68%, #F9FAFD 32%);
 }
 
 .up-box {
@@ -277,7 +274,7 @@ body {
   display: none;
 }
 
-@media all and (max-width: 1086px) {
+@media all and (max-width: 1230px) {
   body {
     margin: 4rem 5rem;
   }
@@ -311,7 +308,7 @@ body {
     grid-template-rows: repeat(4, 9rem);
   }
 }
-@media all and (max-width: 650px) {
+@media all and (max-width: 730px) {
   body {
     margin: 4rem 3rem;
   }
