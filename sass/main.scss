@@ -4,6 +4,7 @@
 html{
     box-sizing: border-box;
     font-size: 14px;
+    height: 100%
 }
 
 @include desktop.desktop-view();

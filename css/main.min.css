@@ -243,11 +243,13 @@ html {
 html {
   box-sizing: border-box;
   font-size: 14px;
+  height: 100%;
 }
 
 body {
   margin: 4rem 11rem;
   background: linear-gradient(0deg, white 68%, #F9FAFD 32%);
+  background-repeat: no-repeat;
 }
 
 .up-box {
