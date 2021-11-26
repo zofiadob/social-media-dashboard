@@ -2,6 +2,7 @@
 @use './toggleButton';
 @use './large-box';
 @use './small-box';
+@use './dark-mode';
 
 html{
     font-family: $font;
@@ -11,6 +12,10 @@ html{
     
     body{
         margin: 4rem 11rem;
+    }
+
+    .theme-light{
+        background: linear-gradient(0deg, $white 68%, $light-grayish-blue-2 32%);
     }
 
     .up-box{

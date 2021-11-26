@@ -1,1 +1,52 @@
 @use "./variables" as *;
+
+.dark-theme {
+    background: linear-gradient(0deg, $very-dark-blue-down 68%, $very-dark-blue-top 32%);
+
+    .main-text{
+        color: $white;
+    }
+    
+    .text{
+        color: $desaturated-blue-text;
+    }
+
+    .up-box {
+        .text-box {
+            .sub-text {
+                color: $desaturated-blue-text;
+            }
+
+            .separate-line{
+                border: 1px solid $dark-desaturated-blue-hover;
+            }
+        }
+    }
+
+
+    .theme-button-box .toggle .slider::before {
+        background: $very-dark-blue-top;
+    }
+
+    .box {
+        background-color: $dark-desaturated-blue;
+        &:hover {
+            background-color: $dark-desaturated-blue-hover;
+        }
+
+        .followers {
+            .text-followers {
+                color: $desaturated-blue-text;
+            }
+        }
+
+        .social-name,
+        .left-half .page-views {
+            color: $desaturated-blue-text;
+        }
+
+        .number {
+            color: $white;
+        }
+    }
+}
